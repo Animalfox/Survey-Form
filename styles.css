@@ -67,3 +67,34 @@ input[type="checkbox"], input[type="radio"] {
   text-align: center;
   height: 0.9em;
 }
+
+/* SMALL SCREENS */
+@media screen and (max-width: 600px) {
+
+  html {
+    padding: 10px 0;
+  }
+  
+  body {
+    max-width: unset;
+    width: calc(100% - 20px);
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  body {
+    font-size: 11pt;
+  }
+
+  h1 {
+    font-size: 13pt;
+    text-align: left;
+  }
+
+}
