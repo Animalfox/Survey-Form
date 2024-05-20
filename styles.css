@@ -1,17 +1,69 @@
-html {
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
   font-family: "Segoe UI", sans-serif;
+  box-sizing: border-box;
+}
+
+/* STYLE */
+html {
   width: 100%;
-  height: 100vh;
+  min-height: min-content;
   background: #e2e8f0;
+  margin: 0;
+  padding: 2.5rem 0;
 }
 
 body {
   width: 100%;
   height: min-content;
-  max-width: 500px;
-  margin: 3em auto;
+  max-width: 600px;
   background: #fff;
-  padding: 1.5em 2em;
+  color: #234;
+  padding: 1em 1.5em;
   border-radius: 0.5em;
-  font-size: 18px;
+  font-size: 17px;
+  margin: auto;
+}
+
+body * {
+  padding-bottom: 4px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+  color: #36A;
+  margin: 0.25em 0;
+}
+
+p {
+  padding: 0.5em 0;
+}
+
+input, textarea, select {
+  margin: 4px 0;
+  border: none;
+  background: #DEF;
+  height: 2.5em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: #000;
+}
+
+textarea {
+  min-height: 6em;
+}
+
+input, textarea, label, select {
+  display: block;
+  width: 100%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline-block;
+  width: unset;
+  text-align: center;
+  height: 0.9em;
 }
